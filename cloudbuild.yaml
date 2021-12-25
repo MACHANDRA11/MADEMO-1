@@ -1,12 +1,25 @@
 # build the container image
+
+
+
 - name: "gcr.io/cloud-builders/docker"
-args: ["build", "-t", "gcr.io/task-ma123/github.com/kplove/hello-world:latest", "."]
-# push container image
+
+ args: ["build", "-t", "gcr.io/task-ma123/hello-world:latest", "."]
+
+ # push container image
+
 - name: "gcr.io/cloud-builders/docker"
-args: ["push", "gcr.io/task-ma123/github.com/kplove/hello-world:latest"]
-# deploy container image to GKE
+
+ args: ["push", "gcr.io/task-ma123/hello-world:latest"]
+
+ # deploy container image to GKE
+
 - name: "gcr.io/cloud-builders/gke-deploy"
-args:
-- run
-- --filename=cloudbuild.yaml
-- --image=gcr.io/kplove/github
+
+ args:
+
+ - run
+
+ - --filename=my-cloudbuild.yaml
+
+ - --image=gcr.io/kplove/github
