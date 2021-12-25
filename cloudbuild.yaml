@@ -4,7 +4,7 @@
 
 - name: "gcr.io/cloud-builders/docker"
 
- args: ["build", "-t", "gcr.io/task-ma123/hello-world:latest", "."]
+ args: ["build", "--t", "gcr.io/task-ma123/hello-world:latest", "."]
 
  # push container image
 
