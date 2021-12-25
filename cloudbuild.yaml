@@ -9,7 +9,7 @@
  # push container image
 
 - name: "gcr.io/cloud-builders/docker"
-
+-
  args: ["push", "gcr.io/tasksatt/hello-world:latest"]
 
  # deploy container image to GKE
