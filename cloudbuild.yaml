@@ -8,5 +8,5 @@ args: ["push", "gcr.io/task-ma123/github.com/kplove/hello-world:latest"]
 - name: "gcr.io/cloud-builders/gke-deploy"
 args:
 - run
-- --filename=my-cloudbuild.yaml
+- --filename=cloudbuild.yaml
 - --image=gcr.io/kplove/github
