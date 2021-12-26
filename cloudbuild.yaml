@@ -1,7 +1,7 @@
 # build the container image
 steps:
 - name: "gcr.io/cloud-builders/docker"
-  args: ["build", "--t", "gcr.io/tasksatt/hello-world:latest", "."]
+  args: ["build", "-t", "gcr.io/tasksatt/hello-world:latest", "."]
 
  # push container image
 
